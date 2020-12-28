@@ -1,1 +1,1 @@
-# rotinas_mestrado
+# Algorithms Used in the Master`s
