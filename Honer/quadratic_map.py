@@ -40,7 +40,7 @@ y2=y
 h=2
 
 
-with open("dados/mq.csv", "w", newline='') as mq: 
+with open("D:/mestrado2021/rotinas_mestrado/data/windows/Horner/quadratic_map.csv", "w", newline='') as mq: 
     dados = csv.writer(mq)
     for k in range(h,N):
         y = np.append(y, 0.6435*y[k-2]**2 - y[k-1]**2 + 0.6774 + 0.6435*y[k-1])
@@ -155,7 +155,7 @@ plt.legend(loc=3,fontsize=19)
 
 #%%==================================================================================
 # Comparação com Matlab
-
+'''
 ymodel=np.loadtxt("mapaquadratico_ymodel.dat")
 yhorner=np.loadtxt("mapaquadratico_yhorner.dat")
 
@@ -171,7 +171,6 @@ plt.xlabel('k',fontsize=20,**csfont)
 plt.ylabel('y(k)', fontsize=20,**csfont)
 plt.title('Comparação Matlab Horner x Modelo Numpy', fontsize=20,**csfont)
 plt.legend(loc=3,fontsize=19)
-
 
 
 
@@ -208,7 +207,7 @@ print('NRMSE MODELO MPMATH X HORNER MATLAB')
 print(nrmse_matlabH)
 print('')
 
-
+'''
 
 
 
